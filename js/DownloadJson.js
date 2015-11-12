@@ -17,15 +17,21 @@ var DownloadJson = React.createClass({
 
     render: function () {
         return (
-        <div>
-            <label>
-                {this.state.text}
-            </label>
-            <br />
-            <button onClick={this.handleClick}>
-                {this.state.buttontext}
-            </button>
-        </div>
+            <div>
+                <label>
+                    {this.state.text}
+                </label>
+                <br />
+                <button onClick={this.handleClick}>
+                    {this.state.buttontext}
+                </button>
+                <br />
+                <Link to="/">
+                    <button >
+                        "Back to home"
+                    </button>
+                </Link>
+            </div>
         );
     }
 });

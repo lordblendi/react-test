@@ -13,10 +13,8 @@ var Box = React.createClass({
         return (
             <div>
                 <h3>Hello React!</h3>
-                <br />
                 <button onClick={this.handleClick}>{this.state.buttonLabel + this.state.number}</button>
-                <br />
-                <DownloadJson />
+                <div><Link to="/DownloadJson">Download Json</Link></div>
             </div>
         );
     }
